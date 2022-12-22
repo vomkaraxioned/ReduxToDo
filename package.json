@@ -1,6 +1,6 @@
 {
   "name": "todo",
-  "homepage": "https://github.com/vomkaraxioned/ReduxToDo/",
+  "homepage": "https://github.com/vomkaraxioned/ReduxToDo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
