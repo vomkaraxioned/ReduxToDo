@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const TabsStyle = styled.ul`
+  padding:20px 0;
   display:flex;
   justify-content:center;
 
