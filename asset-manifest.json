@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vomkaraxioned/ReduxToDo/static/css/main.c18c2883.css",
-    "main.js": "/vomkaraxioned/ReduxToDo/static/js/main.574c3663.js",
-    "static/js/787.63e47474.chunk.js": "/vomkaraxioned/ReduxToDo/static/js/787.63e47474.chunk.js",
-    "index.html": "/vomkaraxioned/ReduxToDo/index.html",
-    "main.c18c2883.css.map": "/vomkaraxioned/ReduxToDo/static/css/main.c18c2883.css.map",
-    "main.574c3663.js.map": "/vomkaraxioned/ReduxToDo/static/js/main.574c3663.js.map",
-    "787.63e47474.chunk.js.map": "/vomkaraxioned/ReduxToDo/static/js/787.63e47474.chunk.js.map"
+    "main.css": "/ReduxToDo/static/css/main.c18c2883.css",
+    "main.js": "/ReduxToDo/static/js/main.0684130d.js",
+    "static/js/787.63e47474.chunk.js": "/ReduxToDo/static/js/787.63e47474.chunk.js",
+    "index.html": "/ReduxToDo/index.html",
+    "main.c18c2883.css.map": "/ReduxToDo/static/css/main.c18c2883.css.map",
+    "main.0684130d.js.map": "/ReduxToDo/static/js/main.0684130d.js.map",
+    "787.63e47474.chunk.js.map": "/ReduxToDo/static/js/787.63e47474.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c18c2883.css",
-    "static/js/main.574c3663.js"
+    "static/js/main.0684130d.js"
   ]
 }
