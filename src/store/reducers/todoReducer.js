@@ -1,4 +1,4 @@
-import TodoController from "../TodoController";
+import TodoController from "../../TodoController";
 
 const todoReducer = (todoList = [], action) => {
   const controller = new TodoController();

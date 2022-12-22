@@ -17,6 +17,10 @@ const TabsStyle = styled.ul`
     &:last-child { margin-right:0}
 
     &:hover,active { transform:scale(1.1) }
+
+    @media only screen and (max-width: 480px) {
+      flex-basis:25%;
+    }
   }
 `;
 
