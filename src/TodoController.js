@@ -12,7 +12,7 @@ class TodoController {
   }
 
   addData(data) {
-    this.todoArr.push({ id: Math.round((Math.random() * 100)) + data.slice(0, 4), task: data, status: "active" });
+    this.todoArr.push({ id: Math.round((Math.random() * 1000)) + data.slice(0, 4), task: data, status: "active" });
     localStorage.setItem("todo", JSON.stringify(this.todoArr));
   }
 
