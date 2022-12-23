@@ -6,7 +6,7 @@ import Form from "./components/Form/index";
 import Tabs from "./components/Tabs/index";
 import Todo from "./components/Todo/index";
 import { useSelector, useDispatch } from "react-redux";
-import add, { edit, remove, complete,saveEdited } from "./actions/todoActions";
+import add, { edit, remove, complete,saveEdited } from "./store/actions/todoActions";
 
 const App = () => {
 
