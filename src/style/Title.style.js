@@ -1,18 +1,16 @@
-import styled from "styled-components";
+import tw from "tailwind-styled-components";
 
-const Heading = styled.h1`
-  padding:53px 0 35px 0;
-  color:${props=>props.textColor};
-  cursor:pointer;
-  font-size:34px;
-  font-weight:900;
-  text-align:center;
-  text-shadow: -3px -3px 2px rgba(0, 0, 0, 1);
-  text-transform:capitalize;
-
-  &:hover {
-    transform:scale(1.2)
-  }
+const Heading = tw.h1`
+  pt-4
+  pb-2
+  mb-10
+  text-slate-0
+  cursor-pointer
+  text-3xl
+  text-black
+  text-center
+  capitalize
+  hover:scale-150
 `;
 
 export default Heading ;

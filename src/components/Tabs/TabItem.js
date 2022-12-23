@@ -4,7 +4,7 @@ const TabItem = ({ name, tabFilterHandler }) => {
   };
 
   return (
-    <li data-status={name} onClick={(e) => setTab(e)}>{name}</li>
+    <li data-status={name} onClick={(e) => setTab(e)} className="py-2 px-3 bg-slate-400 mr-5 rounded-xl hover:scale-125 cursor-pointer capitalize">{name}</li>
   )
 };
 

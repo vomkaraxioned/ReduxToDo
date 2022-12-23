@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Title from "./components/Title/index";
-import Container from "./style/Container.style";
 import appConfig from "./appConfig";
 import Form from "./components/Form/index";
 import Tabs from "./components/Tabs/index";
@@ -17,12 +16,12 @@ const App = () => {
     controlsHandler = { dispatch, edit, remove, complete,saveEdited };
 
   return (
-    <Container bgColor={container.bgColor}>
-      <Title name={title.name} textColor={title.textColor} />
+    <>
+      <Title name={title.name} />
       <Form formDetails={form.actions} inputs={form.inputs} submitHandler={(data) => dispatch(add(data))} />
       <Tabs tabs={tabs} tabFilterHandler={setTabFilter} />
       <Todo todoList={todoList} controlsHandler={controlsHandler} tabFilter={tabFilter} />
-    </Container>
+    </>
   );
 };
 
