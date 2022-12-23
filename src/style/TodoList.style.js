@@ -18,12 +18,24 @@ const TodoList = styled.ul`
     border-radius:10px;
     margin:0 1% 15px 0;
     display:flex;
+    position:relative;
     background:#fff;
     cursor:pointer;
     flex-basis:20%;
     flex-direction:column;
 
     &:nth-child(4n) { margin-rigth:0 }
+
+    span { 
+      width:24%;
+      padding:4px 0;
+      border:2px solid #454545;
+      border-radius:10px;
+      position:absolute;
+      right:2%;
+      background:#6a5aab;
+      text-align:center;
+     }
 
     textarea { 
       flex-basis:100%;
