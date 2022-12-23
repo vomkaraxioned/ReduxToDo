@@ -14,7 +14,7 @@ const TodoItem = ({ id, toDo, status, controlsHandler }) => {
     <li data-id={id} data-status={status} >
       {status === "completed" ? <span>done</span> : null}
 
-      <textarea rows="10" defaultValue={toDo} ref={textareaRef} onChange={() => textareaData(textareaRef.current.value)} onBlur={() => controlsHandler.dispatch(controlsHandler.saveEdited(details, textareaRef.current))} disabled></textarea>
+      <textarea rows="10" defaultValue={toDo} ref={textareaRef} onChange={() => textareaData(textareaRef.current.value)} onBlur={() => controlsHandler.dispatch(controlsHandler.saveEdited(details, textareaRef.current))} disabled ></textarea>
 
       <div className="controls">
 
