@@ -6,8 +6,8 @@ const Input = ({ type, name, styleName, basis, placeholder, handler, index }) =>
 
 
   return (
-    <InputContainer basis={basis}>
-      <input type={type} name={name} className={`flex-1 py-1 px-5 border-slate-700 focus:outline-blue-900`} placeholder={placeholder} ref={reference} onChange={() => handler(reference.current.value)} />
+    <InputContainer basis={basis} isBtn = {styleName === "btn btn-submit"?true:false}>
+      <input type={type} name={name} className={`flex-1 py-1 px-5 border-slate-700 focus:outline-blue-900 ${styleName === "btn btn-submit"?"text-none":"capitalize" }`} placeholder={placeholder} ref={reference} onChange={() => handler(reference.current.value)} />
     </InputContainer>
   );
 };

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Title from "./components/Title/index";
 import appConfig from "./appConfig";
 import Form from "./components/Form/index";
