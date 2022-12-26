@@ -14,6 +14,7 @@ const App = () => {
     dispatch = useDispatch(),
     [tabFilter, setTabFilter] = useState("active"),
     controlsHandler = { dispatch, edit, remove, complete,saveEdited };
+    document.body.classList.add("bg-[#8074c5]");
 
   return (
     <>
