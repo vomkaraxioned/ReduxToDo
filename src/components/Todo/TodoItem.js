@@ -8,12 +8,18 @@ const TodoItem = ({ id, toDo, status, controlsHandler }) => {
     setDetails(prev => {
       return { ...prev, text: text };
     });
-  }
+  };
 
   const completedHandler = (e) => {
-    e.target.classlist.add("moveOut");
-    controlsHandler.dispatch(controlsHandler.complete(details));
-  }
+    e.target.parentElement.parentElement.classList.add("moveOut");
+    setTimeout(() => controlsHandler.dispatch(controlsHandler.complete(details)), 1000);
+  };
+
+  const deleteHandler = (e) => {
+    e.target.parentElement.parentElement.classList.add("moveOut");
+    setTimeout(() => controlsHandler.dispatch(controlsHandler.remove(details)), 1000);
+
+  };
 
   return (
     <li data-id={id} data-status={status} >
@@ -27,7 +33,7 @@ const TodoItem = ({ id, toDo, status, controlsHandler }) => {
 
         {status !== "completed" ? <button className="controls__complete" onClick={(e) => completedHandler(e)}>complete</button> : null}
 
-        <button className="controls__delete" onClick={() => controlsHandler.dispatch(controlsHandler.remove(details))}>delete</button>
+        <button className="controls__delete" onClick={(e) => deleteHandler(e)}>delete</button>
 
       </div>
 

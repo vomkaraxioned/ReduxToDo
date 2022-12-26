@@ -10,7 +10,7 @@ const InputContainer = styled.div`
     outline:none;
 
     &[type=text],&[type=email] {
-      padding:7px 2%;
+      padding:4px 2%;
       border-radius:5px;
       margin-right:3%;
 

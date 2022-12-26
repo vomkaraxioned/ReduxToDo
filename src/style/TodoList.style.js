@@ -6,13 +6,19 @@ const scaleout = keyframes`
 `;
 
 const moveOut = keyframes`
-  from{transform:translateX(0)}
-  to{transform:translateX(-100%)}
+  from{ 
+    transform:translateX(0) scale(.5);
+    opacity:1;
+   }
+  to{ 
+    transform:translateX(-1000%);
+    opacity:.8;
+   }
 `;
 
 const TodoList = styled.ul`
   width:90%;
-  margin:0 auto;
+  margin:0 auto; 
   display:flex;
   flex-wrap:wrap;
   overflow:hidden;
