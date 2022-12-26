@@ -19,7 +19,7 @@ class TodoController {
   removeSaveAndComplete(id, to_remove, editedValue) {
     this.todoArr.map((todo, i) => {
       if (todo.id === id) {
-        editedValue ? todo.task === editedValue : to_remove ? this.todoArr.splice(i, 1) : todo.status = "completed";
+        editedValue ? todo.task = editedValue : to_remove ? this.todoArr.splice(i, 1) : todo.status = "completed";
       }
     });
     this.setData(this.todoArr);

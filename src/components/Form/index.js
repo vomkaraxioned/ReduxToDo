@@ -8,6 +8,7 @@ const Form = ({ formDetails, inputs, submitHandler }) => {
 
   const eventPreventer = (e) => {
     e.preventDefault();
+    e.target.reset();
     submitHandler(text);
   }
 

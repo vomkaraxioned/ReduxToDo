@@ -1,4 +1,4 @@
-const add = (data, i) => { return { type: "add", todo: data } };
+const add = (data) => { return { type: "add", todo: data } };
 
 const remove = (details) => {
   return { type: "remove", id: details.id, to_remove: 1 };

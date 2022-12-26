@@ -5,12 +5,19 @@ const scaleout = keyframes`
   to{transform:translateX(0)}
 `;
 
+const moveOut = keyframes`
+  from{transform:translateX(0)}
+  to{transform:translateX(-100%)}
+`;
+
 const TodoList = styled.ul`
   width:90%;
   margin:0 auto;
   display:flex;
   flex-wrap:wrap;
   overflow:hidden;
+
+  .moveOut { animation:${moveOut} 1s }
 
   li {
     padding:10px 2%;
