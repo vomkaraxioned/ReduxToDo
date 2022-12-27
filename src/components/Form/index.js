@@ -11,9 +11,9 @@ const Form = ({ formDetails, inputs, submitHandler }) => {
   }
 
   return (
-      <form action={formDetails.action} name={formDetails.name} onSubmit={eventPreventer} className={formDetails.styleName}>
+      <form action={formDetails.action} name={formDetails.name} onSubmit={eventPreventer} className={formDetails.styleName} >
         {
-          inputs.map(({ type, name, styleName,wrapperStyle, placeholder }, i) => <Input type={type} name={name} styleName={styleName}  placeholder={placeholder} key={name} handler={setText} wrapperStyle={wrapperStyle}/>)
+          inputs.map(({ type, name, styleName,wrapperStyle,icon, placeholder }) => <Input type={type} name={name} styleName={styleName}  placeholder={placeholder} key={name} handler={setText} wrapperStyle={wrapperStyle} icon={icon}/>)
         }
       </form>
   );
