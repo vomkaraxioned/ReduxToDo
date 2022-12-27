@@ -1,11 +1,10 @@
-import TabsStyle from "../../style/TabsStyle.style";
 import TabItem from "./TabItem";
 
-const Tabs = ({ tabs, tabFilterHandler }) => {
+const Tabs = ({ tabs, tabFilterHandler,tabsStyle,tabStyle }) => {
   return (
-    <TabsStyle>
-      {tabs.map(name => <TabItem name={name} key={name} tabFilterHandler={tabFilterHandler} />)}
-    </TabsStyle>
+    <ul className = {tabsStyle}>
+      {tabs.map(name => <TabItem name={name} key={name} tabFilterHandler={tabFilterHandler} tabStyle={tabStyle}/>)}
+    </ul>
   );
 
 };

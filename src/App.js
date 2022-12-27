@@ -9,7 +9,7 @@ import add, { edit, remove, complete,saveEdited } from "./store/actions/todoActi
 
 const App = () => {
 
-  const { container, title, form, tabs } = appConfig,
+  const { container, title, form, tabDetails } = appConfig,
     todoList = useSelector((state => state.todoReducer)),
     dispatch = useDispatch(),
     [tabFilter, setTabFilter] = useState("active"),
@@ -18,9 +18,9 @@ const App = () => {
 
   return (
     <>
-      <Title name={title.name} />
+      <Title name={title.name} styleName = {title.styleName}/>
       <Form formDetails={form.actions} inputs={form.inputs} submitHandler={(data) => dispatch(add(data))} />
-      <Tabs tabs={tabs} tabFilterHandler={setTabFilter} />
+      <Tabs tabs={tabDetails.tabs} tabFilterHandler={setTabFilter} tabsStyle={tabDetails.tabsStyle} tabStyle={tabDetails.tabStyle}/>
       <Todo todoList={todoList} controlsHandler={controlsHandler} tabFilter={tabFilter} />
     </>
   );
